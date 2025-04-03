@@ -1,3 +1,17 @@
+Clone this repo 
+
+    git clone https://github.com/microsoft/dstoolkit-phi2-finetune.git
+
+Once the repo has been cloned, create a new Python enviroment and activate it
+
+    python -m virtualenv env
+    env\Scripts\Activate
+
+Install Python requirements from requirements.txt
+
+    pip install -r requirements.txt
+    
+    
 # Project
 
 > This repo has been populated by an initial template to help get you started. Please
