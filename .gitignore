@@ -8,6 +8,7 @@
 
 # folders stuctures
 **/code/model_checkpoints/
+**/sample_data/02-Object_Detection/processed/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
