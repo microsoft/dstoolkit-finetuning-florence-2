@@ -2,7 +2,7 @@ from PIL import ImageDraw, ImageFont
 import numpy as np
 import matplotlib.pyplot as plt
 
-def draw_bounding_boxes(image, combined_results, size_bb = 20, size_text = 20, label_bb = True, color_bb = True):
+def draw_bounding_boxes(image, combined_results, size_bb = 20, size_text = 20, label_bb = True, color_bb = True, text_offset = (5, 5)):
     """
     Draw bounding box for dictionary of bounding boxes and labels.
     {"bboxes": all_boxes, "labels": all_labels} OR {"polygons": all_boxes, "labels": all_labels}
@@ -34,7 +34,7 @@ def draw_bounding_boxes(image, combined_results, size_bb = 20, size_text = 20, l
         elif bbox_type == "polygons": # quad_boxes - number of points: x1, y1, x2, y2, ...., xi, yi
             draw.polygon(box, outline=color, fill=color, width=size_bb)
         if label_bb:
-            draw.text((x1+5, y1+5), label, fill="black", font=font)
+            draw.text((x1+text_offset[0], y1+text_offset[1]), label, fill="black", font=font)
             
     fig, ax = plt.subplots(1)
     ax.imshow(modified_image)
