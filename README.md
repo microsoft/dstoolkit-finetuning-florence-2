@@ -1,29 +1,31 @@
-Clone this repo 
+# Finetuning Florence-2
+This project aims to give an overview into how to get started using Florence-2, developed by Microsoft.
+Florence-2 is a vision foundation model that be used for a variety of computer vision tasks such as:
+    - Object Detection
+    - Captioning
+    - Classification
+    - Segmentation
+    - Optical Character Recognition (OCR)
 
-    git clone https://github.com/microsoft/dstoolkit-phi2-finetune.git
+These notebooks will help you get started with the general useage and limitations as well as show an
+example of how to finetune the model for object detection on a simple example. If you have your own data,
+`02-Object_Detection_Finetuning.ipynb` will give further instructions how you can modify the notebook to
+finetune using your own data.
+
+## Getting started
+
+Clone this repo 
+    - `git clone https://github.com/microsoft/dstoolkit-finetuning-florence-2.git`
 
 Once the repo has been cloned, create a new Python enviroment and activate it
-
-    python -m virtualenv env
-    env\Scripts\Activate
+    - `python -m virtualenv env`
+    `env\Scripts\Activate`
 
 Install Python requirements from requirements.txt
+    - `pip install -r requirements.txt`
 
-    pip install -r requirements.txt
+Open and work through `01-Base_Model.ipynb` before `02-Object_Detection_Finetuning.ipynb`.
     
-    
-# Project
-
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
-
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
